@@ -1,0 +1,27 @@
+Copyright Timo Tuunanen (timtuun@cc.jyu.fi) 2005-2007
+
+See COPYING for license information.
+
+ASLA is an open source license recognition and analyzator tool.
+
+If you wish to do license and dependency check for your package you should first:
+	1. Compile modified versions of gnu linker (ld) and archive tool (ar). Modified 
+versions are distributed as a separate package.
+	2. Set the PATH -environment variable to the location of modified versions of ar and ld. 
+( export PATH=/location_of_the_modified_ar_and_ld:$PATH )
+	3. Set the environment variable DEPENDENCIES_OUTPUT: export DEPENDENCIES_OUTPUT=objects.dep
+	4. Configure and make the software packages that you wish to analyze.
+	5. Run license analysis for the source tree: Analyze -> Analyze package (select
+the top folder of the source package)
+
+
+You can also make a simple license recognition for your package:
+Just extract the source package that you wish to check. Then run license recognition
+from the UI: Analyze -> Analyze only licenses of a package
+This does not require the compilation.
+
+Tool functionality and used techniques are described in:  
+Tuunanen T., Koskinen J. and Kärkkäinen T. 
+Retrieving Open Source Software Licenses. 
+Proceedings of the 2nd International Conference on Open Source Systems (OSS 2006), 
+Springer, International Federation for Information Processing (IFIP) Series.
